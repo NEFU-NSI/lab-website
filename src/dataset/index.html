@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang=" en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css?v=099d02978fe4c68fb32be3605eaadc0859b13715">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Maple Network Dataset | Maple Dataset is a dataset focus on IDS/IPS, DDoS, malware, VPN, well-obfuscated proxy and more.</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Maple Network Dataset" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Maple Dataset is a dataset focus on IDS/IPS, DDoS, malware, VPN, well-obfuscated proxy and more." />
+<meta property="og:description" content="Maple Dataset is a dataset focus on IDS/IPS, DDoS, malware, VPN, well-obfuscated proxy and more." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Maple Network Dataset" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Maple Network Dataset" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Maple Dataset is a dataset focus on IDS/IPS, DDoS, malware, VPN, well-obfuscated proxy and more.","headline":"Maple Network Dataset","name":"Maple Network Dataset","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <a id="a-title" href="/">
+            <h1>Maple Network Dataset</h1>
+        </a>
+        <h2>Maple Dataset is a dataset focus on IDS/IPS, DDoS, malware, VPN, well-obfuscated proxy and more.</h2>
+
+        <section id="downloads">
+            
+        </section>
+    </div>
+</header>
+
+<div class="container">
+    <section id="toc">
+        <ul><li><a href="#maple-dataset">Maple Dataset</a><ul><li><a href="#background">Background</a></li><li><a href="#compatible-with-your-previous-work-on-cic-ids-dataset">Compatible with Your Previous Work on CIC-IDS Dataset</a></li><li><a href="#dataset-category-overview-whats-inside">Dataset Category Overview (What’s inside?)</a></li><li><a href="#more-features-coming-soon">More Features Coming Soon</a></li><li><a href="#data-generation">Data Generation</a></li><li><a href="#middleware-and-tools-available">Middleware and Tools Available</a></li><li><a href="#cite-us">Cite Us!</a></li><li><a href="#download-dataset">Download Dataset</a></li><li><a href="#contact-us">Contact Us</a></li><li><a href="#open-source">Open Source</a></li></ul></li></ul>
+    </section>
+    <section id="main_content">
+        <p>Language: <a href="/index">English</a>, <a href="/zh-cn/index">简体中文</a></p>
+
+<h1 id="maple-dataset">Maple Dataset</h1>
+
+<p>The Maple Dataset is an intrusion detection evaluation dataset aimed at enhancing the performance and reliability of
+anomaly-based intrusion detection systems (IDS) and intrusion prevention systems (IPS). With the increasing
+sophistication of network attacks, having a reliable and up-to-date dataset is crucial for testing and validating IDS
+and IPS solutions.</p>
+
+<h2 id="background">Background</h2>
+
+<p>Traditional evaluation datasets have shown inconsistencies and unreliability, mainly due to outdated content, lack of
+traffic diversity, insufficient attack variety, anonymized packet payload data, and inadequate feature sets and
+metadata. The Maple Dataset addresses these challenges by providing a comprehensive and contemporary dataset for
+intrusion detection research.</p>
+
+<h2 id="compatible-with-your-previous-work-on-cic-ids-dataset">Compatible with Your Previous Work on CIC-IDS Dataset</h2>
+
+<p>The Maple Dataset is compatible with your previous work on the CIC-IDS 2017 dataset. It offers a more comprehensive and
+more diverse dataset, which is ideal for your previous work. You can use CICFlowMeter to generate the CSV files as same
+as you used before! <strong>No more code or work is needed.</strong></p>
+
+<h2 id="dataset-category-overview-whats-inside">Dataset Category Overview (What’s inside?)</h2>
+
+<ul>
+  <li><strong>Content</strong>: The dataset contains benign and the most recent common attacks, resembling real-world network traffic
+(PCAP/PCAPNGs).</li>
+  <li><strong>Traffic Analysis</strong>: Results of network traffic analysis using CICFlowMeter with labeled flows based on timestamps,
+source and destination IPs, ports, protocols, and attack types are included in CSV files.</li>
+  <li><strong>DDoS Attacks</strong>: The dataset includes DDoS attacks, which are common in the real-world network traffic. And with
+random content, the dataset is more diverse. GET, POST, HEAD and OPTIONS are the most common HTTP methods.</li>
+  <li><strong>N-day Vunerability</strong>: The dataset includes n-day vulnerabilities, such as HeartBleed.</li>
+  <li><strong>More scenarios</strong>: Netflow in IoT devices, DNS tunneling, and more.</li>
+</ul>
+
+<h2 id="more-features-coming-soon">More Features Coming Soon</h2>
+
+<ul>
+  <li>DPDK, PF_RING support</li>
+  <li>More attacks and vulnerabilities</li>
+  <li>More metadata for each flow</li>
+</ul>
+
+<blockquote>
+  <p>Please feedback to us if you have any questions or suggestions.</p>
+</blockquote>
+
+<h2 id="data-generation">Data Generation</h2>
+
+<p>We profile the traffic by the mode and pattern we have observed in the real-world network traffic by mirroring the
+dataflow. The abstract behaviors o8wf users based on HTTP, HTTPS with SM3/4 (People’s Republic of China), GOST (Russian
+Federation) and more. SSH, RESTful API, gRPC, WASM, these modern +protocols with various of implementations, and more
+were constructed for this dataset.</p>
+
+<h2 id="middleware-and-tools-available">Middleware and Tools Available</h2>
+
+<blockquote>
+  <p>We have used a lot of tools developed by us during the creation of the dataset
+They are open-sourced and available to download.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Tool</th>
+      <th style="text-align: left">Description</th>
+      <th style="text-align: left">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">pcap2para</td>
+      <td style="text-align: left">extract http payload from pcap file</td>
+      <td style="text-align: left"><a href="https://github.com/maple-nefu/pcap2para">maple-nefu/pcap2para</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">more is coming</td>
+      <td style="text-align: left">…</td>
+      <td style="text-align: left">…</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="cite-us">Cite Us!</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Q. Li, B. Wang, X. Wen, Y. Chen, Cybersecurity situational awareness framework based on ResNet modeling
+</code></pre></div></div>
+
+<h2 id="download-dataset">Download Dataset</h2>
+
+<blockquote>
+  <p><a href="https://maple.nefu.edu.cn/dataset">Download Here</a></p>
+</blockquote>
+
+<p>Dataset Included:</p>
+
+<ul>
+  <li>DDoS: HTTP (Plain/gzip/random), TCP, UDP, ReCOIL, LOIC</li>
+  <li>DNS: DoH, DoQ, DoT (coming soon)</li>
+  <li>ICMP: Normal ICMP, Smuggled ICMP</li>
+  <li>MySQL: CVE-2012-2122</li>
+  <li>Nginx: CVE-2017-7529</li>
+  <li>OpenSSL: CVE-2022-0778, HeartBleed, Normal traffic</li>
+  <li>Windows OS: Windows 10 provision, Windows Update</li>
+  <li>VPN: Cisco AnyConnect, DNS Leak, Trojan traffic (coming soon)</li>
+</ul>
+
+<h2 id="contact-us">Contact Us</h2>
+
+<p>If you have any questions or need assistance, please feel free to contact us:</p>
+
+<ul>
+  <li>Email: <a href="mailto:maple@nefu.edu.cn">maple@nefu.edu.cn</a></li>
+  <li>GitHub: <a href="https://github.com/maple-nefu">github.com/maple-nefu</a></li>
+  <li>QQ Group: 631300176</li>
+  <li>Telegram: <a href="https://t.me/maple_dataset">@maple_dataset</a></li>
+  <li>Discord: <a href="https://discord.gg/CkaAaaVKHm">Maple Dataset</a></li>
+</ul>
+
+<h2 id="open-source">Open Source</h2>
+
+<p><a href="./open-source">About Open Source Projects</a></p>
+
+<hr />
+
+    </section>
+</div>
+</body>
+</html>
